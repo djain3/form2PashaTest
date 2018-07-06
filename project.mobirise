@@ -52,7 +52,10 @@
             },
             "& when (@bg-type = 'image')": {
               ".text-block": {
-                "background": "url(@bg-value)"
+                "background": "url(@bg-value)",
+                "background-position": "center",
+                "background-repeat": "no-repeat",
+                "background-size": "cover"
               },
               ".mbr-overlay": {
                 "background-color": "@overlayColor",
