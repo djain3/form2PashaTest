@@ -52,8 +52,7 @@
             },
             "& when (@bg-type = 'image')": {
               ".text-block": {
-                "background": "url(@bg-value) no-repeat center",
-                "background-size": "cover"
+                "background": "url(@bg-value)"
               },
               ".mbr-overlay": {
                 "background-color": "@overlayColor",
@@ -136,7 +135,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }
