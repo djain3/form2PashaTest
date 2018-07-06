@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "name": "Site-07-06_1134",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "organicamp",
+      "title": "OrganicAMP",
+      "styling": {
+        "primaryColor": "#91AC41",
+        "secondaryColor": "#DDD78D",
+        "successColor": "#AAD236",
+        "infoColor": "#5ACDA6",
+        "warningColor": "#8b8b99",
+        "dangerColor": "#f69dad",
+        "mainFont": "Poppins",
+        "display1Font": "Poppins",
+        "display1Size": 2.25,
+        "display2Font": "Poppins",
+        "display2Size": 1.5,
+        "display5Font": "Caveat",
+        "display5Size": 1.5,
+        "display6Font": "Poppins",
+        "display6Size": 1,
+        "display7Font": "Poppins",
+        "display7Size": 0.875,
+        "display4Font": "Poppins",
+        "display4Size": 0.75,
+        "isRoundedButtons": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [],
+    "versionFirst": "4.7.7",
+    "uniqCompNum": 1,
+    "versionPublish": "4.7.7"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              ".text-block": {
+                "background": "url(@bg-value) no-repeat center",
+                "background-size": "cover"
+              },
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity",
+                "z-index": "1"
+              }
+            },
+            "& when (@flexDirection)": {
+              ".main-row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-temp": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            "form.mbr-form .fieldset": {
+              "display": "block"
+            },
+            ".text-wrapper p": {
+              "margin-bottom": "3.4375rem"
+            },
+            ".image-block,.text-wrapper": {
+              "z-index": "100"
+            },
+            ".mobirise-loader": {
+              "height": "100%"
+            },
+            ".text-wrapper": {
+              "margin": "6.25rem"
+            },
+            ".email": {
+              "width": "100%"
+            },
+            ".mbr-section-btn, .btn": {
+              "margin": "0"
+            },
+            ".main-row": {
+              "max-height": "48.75rem"
+            },
+            "label.email > input": {
+              "background": "#ffffff",
+              "border": "none",
+              "line-height": "1",
+              "padding": ".7rem",
+              "width": "100%",
+              "border-radius": "4px",
+              "margin-top": "0.625rem",
+              "margin-bottom": "1rem"
+            },
+            ".list-item:hover": {
+              ".icon-wrap": {
+                "transform": "scale(1.1, 1.1)"
+              }
+            },
+            ".image-block": {
+              "padding": "0"
+            },
+            "@media (max-width: 1300px)": {
+              ".text-wrapper": {
+                "margin": "3.25rem"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".text-wrapper": {
+                "margin": "1.25rem"
+              },
+              ".main-row": {
+                "max-height": "none"
+              },
+              ".text-wrapper p": {
+                "margin-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "form2",
+          "_customHTML": "<section class=\"Form2\" group=\"Forms\" plugins=\"amp-main, amp-form, amp-mustache\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/20.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container-fluid\">\n        <div class=\"mbr-row main-row\">\n            <div class=\"image-block mbr-col-lg-8 mbr-col-md-12 mbr-col-sm-12\">\n                <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/19.jpg\" layout=\"responsive\" width=\"1148.1030444964872\" height=\"766\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/19.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n            <div class=\"text-block d-flex mbr-justify-content-center mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4\">\n                <div class=\"text-wrapper\">\n                    <h4 class=\"mbr-section-subtitle align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        Fresh Food\n                    </h4>\n                    <h3 class=\"mbr-section-title align-left mbr-bold mbr-fonts-style mbr-black\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                        Follow to Us\n                    </h3>\n                    <p class=\"mbr-fonts-style align-left mbr-text main-text\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".main-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, reprehenderit perspiciatis quas at deleniti nihil aliquid.\n                    </p>\n                    <div mbr-form=\"\">\n                    <form class=\"mbr-form\" action=\"\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate=\"\" mbr-theme-style=\"display-7\">\n                        <div submit-success=\"\">\n                          <template data-form-alert=\"\" type=\"amp-mustache\">\n                            Subscription successful!\n                          </template>\n                        </div>\n                        <div submit-error=\"\">\n                          <template data-form-alert=\"\" type=\"amp-mustache\">\n                            Subscription failed! {{error}}\n                          </template>\n                        </div>\n                        <div class=\"fieldset\">\n                            <label class=\"email mbr-col-sm-12\">\n                                <input type=\"email\" class=\"display-6\" name=\"form[data][2][1]\" data-form-field=\"Email\" placeholder=\"Your Email\" required=\"\">\n                            </label>\n                            <div class=\"mbr-section-btn align-left mbr-col-sm-12\" mbr-buttons=\"\" mbr-theme-style=\"display-7\"><a type=\"submit\" class=\"btn btn-lg btn-form btn-danger\">SUBSCRIBE</a></div>\n                        </div>\n                    </form>\n                </div>\n                </div>\n            </div>\n            \n        </div>\n    </div> \n</section>",
+          "_cid": "qX0yduk3UK",
+          "_anchor": "form2-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
